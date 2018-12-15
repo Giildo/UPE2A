@@ -7,9 +7,6 @@ use App\UI\Responder\Interfaces\ViewResponderInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Twig_Error_Loader;
-use Twig_Error_Runtime;
-use Twig_Error_Syntax;
 
 class ViewResponder implements ViewResponderInterface
 {
@@ -44,6 +41,11 @@ class ViewResponder implements ViewResponderInterface
     ) {
         return (empty($options['templatePath'])) ?
             new RedirectResponse($this->urlGenerator->generate($options['redirectPath'])) :
-            new Response($this->viewPresenter->presentation($options, $items));
+            new Response(
+                $this->viewPresenter->presentation(
+                    $options,
+                    $items
+                )
+            );
     }
 }

@@ -7,32 +7,52 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Liste des vignettes</h1>
+    <section>
+        <h1>Liste des vignettes</h1>
 
-    <table>
-        <thead>
-        <tr>
-            <td>Vignette</td>
-            <td>Nom</td>
-            <td>Actions</td>
-        </tr>
-        </thead>
-        <tbody>
-        {% for thumbnail in thumbnails.entities %}
-            <tr>
-                <td>
-                    <img src="{{ asset('pic/' ~ thumbnail.name ~ '.' ~ thumbnail.extension) }}"
-                         alt="{{ thumbnail.name }}">
-                </td>
-                <td>{{ thumbnail.name }}</td>
-                <td>
-                    <a href="#" class="material-icons">edit</a>
-                    <a href="#" class="material-icons">delete</a>
-                </td>
-            </tr>
+        {% for flashMessage in app.session.flashBag.get('error') %}
+            {{ flashMessage }}
         {% endfor %}
-        </tbody>
-    </table>
+
+        <nav>
+            <ul>
+                {% for letter in 'a' .. 'z' %}
+                    <li>
+                        {% if thumbnailsLetters[letter] %}
+                            <a href="{{ path('thumbnails_list', {'id': letter}) }}">{{ letter | upper }}</a>
+                        {% else %}
+                            <p>{{ letter | upper }}</p>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <table>
+            <thead>
+            <tr>
+                <td>Vignette</td>
+                <td>Nom</td>
+                <td>Actions</td>
+            </tr>
+            </thead>
+            <tbody>
+            {% for thumbnail in thumbnails.entities %}
+                <tr>
+                    <td>
+                        <img src="{{ asset('pic/' ~ thumbnail.name ~ '.' ~ thumbnail.extension) }}"
+                             alt="{{ thumbnail.name }}">
+                    </td>
+                    <td>{{ thumbnail.name }}</td>
+                    <td>
+                        <a href="#" class="material-icons">edit</a>
+                        <a href="#" class="material-icons">delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </section>
 {% endblock %}
 
 {% block javascripts %}

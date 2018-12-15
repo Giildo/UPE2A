@@ -1,31 +1,49 @@
-h1 {
+section h1 {
   text-align: center;
   font-family: "Jura", sans-serif;
   font-size: 4em; }
-
-table {
+section nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; }
+  section nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0; }
+    section nav ul li {
+      list-style: none;
+      padding: 5px;
+      font-family: "Jura", sans-serif;
+      font-weight: bold; }
+      section nav ul li a {
+        color: black; }
+      section nav ul li p {
+        margin: 0;
+        color: #707070; }
+section table {
   width: 500px;
   margin: auto;
   border-collapse: collapse;
   text-align: center; }
-  table td {
+  section table td {
     border-left: 1px solid #707070;
     border-right: 1px solid #707070;
     width: 150px; }
-  table td:first-child {
+  section table td:first-child {
     width: 200px;
     border-left: none; }
-  table td:last-child {
+  section table td:last-child {
     border-right: none; }
-  table thead tr {
+  section table thead tr {
     border-bottom: 1px solid #707070; }
-  table tbody tr {
+  section table tbody tr {
     border-bottom: 1px solid #707070; }
-    table tbody tr td:first-child img {
+    section table tbody tr td:first-child img {
       width: 200px;
       height: auto;
       display: block; }
-    table tbody tr td:last-child a {
+    section table tbody tr td:last-child a {
       margin: 15px;
       text-decoration: none;
       color: black; }

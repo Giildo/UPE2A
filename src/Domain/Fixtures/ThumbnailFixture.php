@@ -16,32 +16,38 @@ class ThumbnailFixture extends Fixture
      */
     public function load(ObjectManager $manager)
     {
+        $abeille = new Thumbnail(
+            'abeille',
+            'gif'
+        );
+        $manager->persist($abeille);
+
         $calecon = new Thumbnail(
-            'Caleçon',
+            'caleçon',
             'jpg'
         );
         $manager->persist($calecon);
 
         $chanteuse = new Thumbnail(
-            'Chanteuse',
+            'chanteuse',
             'jpg'
         );
         $manager->persist($chanteuse);
 
         $fee = new Thumbnail(
-            'Fée',
+            'fée',
             'jpg'
         );
         $manager->persist($fee);
 
         $fenetre = new Thumbnail(
-            'Fenêtre',
+            'fenêtre',
             'jpg'
         );
         $manager->persist($fenetre);
 
         $furet = new Thumbnail(
-            'Furet',
+            'furet',
             'jpg'
         );
         $manager->persist($furet);

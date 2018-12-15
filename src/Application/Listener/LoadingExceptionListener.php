@@ -43,13 +43,24 @@ class LoadingExceptionListener
 
         if ($exception instanceof LoadingException) {
             $this->flashBag->set('error', $exception->getMessage());
-            $event->setResponse(
-                $this->viewResponder->response(
-                    [
-                        'redirectPath' => 'core_home',
-                    ]
-                )
-            );
+
+            if (LoadingException::NO_ELEMENT === $exception->getCode()) {
+                $event->setResponse(
+                    $this->viewResponder->response(
+                        [
+                            'redirectPath' => 'core_home',
+                        ]
+                    )
+                );
+            } else if (LoadingException::NO_ELEMENT_WITH_THIS_PARAMS === $exception->getCode()) {
+                $event->setResponse(
+                    $this->viewResponder->response(
+                        [
+                            'redirectPath' => 'thumbnails_list',
+                        ]
+                    )
+                );
+            }
         }
     }
 }

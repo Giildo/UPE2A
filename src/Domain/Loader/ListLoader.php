@@ -28,18 +28,31 @@ class ListLoader implements ListLoaderInterface
     /**
      * {@inheritdoc}
      */
-    public function load(string $entityName): OutputItemInterface
-    {
+    public function load(
+        string $entityName,
+        ?array $params = []
+    ): OutputItemInterface {
         /** @var ThumbnailRepositoryInterface $repository */
         $repository = $this->entityManager->getRepository($entityName);
 
-        $entities = $repository->loadEntities();
+        if (empty($params['filterName'])) {
+            $entities = $repository->loadEntities();
 
-        if (empty($entities)) {
-            throw new LoadingException(
-                'Aucun élément demandé n\'a été trouvé dans la base de données.',
-                LoadingException::NO_ELEMENT
-            );
+            if (empty($entities)) {
+                throw new LoadingException(
+                    'Aucun élément demandé n\'a été trouvé dans la base de données.',
+                    LoadingException::NO_ELEMENT
+                );
+            }
+        } else {
+            $entities = $repository->loadEntitiesByParam($params['filterValue']);
+
+            if (empty($entities)) {
+                throw new LoadingException(
+                    'Aucun élément demandé n\'a été trouvé dans la base de données avec ces paramètres.',
+                    LoadingException::NO_ELEMENT_WITH_THIS_PARAMS
+                );
+            }
         }
 
         return new OutputListDTO($entities);

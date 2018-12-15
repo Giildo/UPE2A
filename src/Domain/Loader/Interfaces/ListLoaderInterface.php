@@ -11,5 +11,8 @@ interface ListLoaderInterface extends LoaderInterface
      *
      * {@inheritdoc}
      */
-    public function load(string $entityName): OutputItemInterface;
+    public function load(
+        string $entityName,
+        ?array $params = []
+    ): OutputItemInterface;
 }

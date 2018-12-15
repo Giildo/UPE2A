@@ -1,56 +1,87 @@
 @import "../style/font";
 @import "../style/color";
 
-h1 {
-  text-align: center;
-  font-family: $titleFont;
-  font-size: 4em;
-}
-
-table {
-  width: 500px;
-  margin: auto;
-  border-collapse: collapse;
-  text-align: center;
-
-  td {
-    border-left: 1px solid $greyDark;
-    border-right: 1px solid $greyDark;
-    width: 150px;
+section {
+  h1 {
+    text-align: center;
+    font-family: $titleFont;
+    font-size: 4em;
   }
 
-  td:first-child {
-    width: 200px;
-    border-left: none;
-  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
 
-  td:last-child {
-    border-right: none;
-  }
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
 
-  thead {
-    tr {
-      border-bottom: 1px solid $greyDark;
+      li {
+        list-style: none;
+        padding: 5px;
+        font-family: $titleFont;
+        font-weight: bold;
+
+        a {
+          color: black;
+        }
+
+        p {
+          margin: 0;
+          color: $greyDark;
+        }
+      }
     }
   }
 
-  tbody {
-    tr {
-      border-bottom: 1px solid $greyDark;
+  table {
+    width: 500px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
 
-      td:first-child {
-        img {
-          width: 200px;
-          height: auto;
-          display: block;
-        }
+    td {
+      border-left: 1px solid $greyDark;
+      border-right: 1px solid $greyDark;
+      width: 150px;
+    }
+
+    td:first-child {
+      width: 200px;
+      border-left: none;
+    }
+
+    td:last-child {
+      border-right: none;
+    }
+
+    thead {
+      tr {
+        border-bottom: 1px solid $greyDark;
       }
+    }
 
-      td:last-child {
-        a {
-          margin: 15px;
-          text-decoration: none;
-          color: black;
+    tbody {
+      tr {
+        border-bottom: 1px solid $greyDark;
+
+        td:first-child {
+          img {
+            width: 200px;
+            height: auto;
+            display: block;
+          }
+        }
+
+        td:last-child {
+          a {
+            margin: 15px;
+            text-decoration: none;
+            color: black;
+          }
         }
       }
     }
