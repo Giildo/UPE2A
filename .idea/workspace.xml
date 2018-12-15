@@ -1,42 +1,406 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c8ff036-6e75-4339-a26f-29e6653236dc" name="Default Changelist" comment="Create the control show page">
-      <change afterPath="$PROJECT_DIR$/assets/css/control/show.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/control/show.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/control/show.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Helper/Slugger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Loader/Interfaces/ItemLoaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Loader/ItemLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Repository/ControlRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Repository/Interfaces/ControlRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Repository/Interfaces/RepositoryLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Action/Control/ShowAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/control/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="5c8ff036-6e75-4339-a26f-29e6653236dc" name="Default Changelist" comment="Create the test list page">
+      <change afterPath="$PROJECT_DIR$/assets/css/control/.sass-cache/3cb8678cda2844a7d61d40f24b62754ac6bd81af/list.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/control/.sass-cache/3cb8678cda2844a7d61d40f24b62754ac6bd81af/show.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/control/.sass-cache/a07d94f3eb9f6ef82f33b603bca2cfda0c6d5511/_color.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/control/.sass-cache/a07d94f3eb9f6ef82f33b603bca2cfda0c6d5511/_font.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/control/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/control/list.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/control/list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/accordeon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/aeroport.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/agriculteur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/alligator.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/ampoule.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/ananas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/appareilphoto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/aquarelle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/araignee.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/arbalete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/armoire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/aspirateur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/aspirine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/assassin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/autruche.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/avion.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/avocat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/balancoire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/baleine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/banane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bandedessinee.jpg (codage non valide)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/barrage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/batterie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bernardlhermite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bibliothque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bifteck.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/boteauxlettres.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bouclier.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bouillotte.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/boulanger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/brique.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/brossecheveux.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/brossedents.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/bureau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cadre.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cafard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cagoule.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/caleon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/camion.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/camlon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/camra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/canard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/caniche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cantine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cartable.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/casque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/casserole.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cave.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cerise.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chaise.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chalet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chambre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/champ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/champagne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chapeau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/charcutier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chargeur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/charpentier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chasseur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chaussepied.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chaussette.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chausson.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chauvesouris.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chemin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chemine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chemise.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cheval.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chevalier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chevreuil.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chewinggum.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chien.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chocolat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/chteaufort.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cible.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/citrouille.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/classeur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/clavecin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/clavier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cloche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/clown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cochon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/collge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/colline.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/compas.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/comptable.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/concombre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/confiture.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/consoledejeux.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/coquelicot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/coquillage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cotontige.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/coussin.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/couteau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/crales.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cran.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/crayon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/crocodile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/croissant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/crottedenez.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/crpes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cuillre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cuisine.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cuisinier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/cycliste.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/dauphin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/dentiste.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/diamant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/dictionnaire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/dinosaure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/directeur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/docteur.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/douche.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/dragon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/drapeau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/dtective.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/eau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/encyclopdie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/escargot.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/explorateur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/extincteur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/facteur.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fauteuil.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fentre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/feu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/feuille.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/film.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/flte.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/football.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fourchette.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fourmilier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fraise.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/frites.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/fusil.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gants.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gardien.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gaufre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gazelle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/girafe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/glace.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gladiateur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/glise.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/grenier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/grenouille.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/guitare.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gupe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gymnastique.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/gyptien.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/harmonica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/harpe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/harpon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/hippocampe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/hippopotame.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/hirondelle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/hlice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/hlicoptre.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/hrisson.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/htel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/internet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/jeudesocit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/journal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/journaliste.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/jungle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/jupe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/jusdefruit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/kangourou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/kiwi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/klaxon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/koala.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lac.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lait.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lampe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lancepierre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lapin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lavabo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lavelinge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lecteurmp3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/libellule.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lit.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/livre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/livreur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/locomotive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lopard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/loupe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/loupgarou.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lphant.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/luge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lune.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/lunettes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/marchand.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/marguerite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/marteau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/matelas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/matressedcole.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mcanicien.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mdicament.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mduse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/menuisier.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/micro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mineur.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/ministre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/montagne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/montgolfire.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/montre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/moto.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mouche.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mouchoir.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/moulin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/moustache.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/moustique.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/msange.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mtorite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mtro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/muse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/musicien.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/mygale.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/natation.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/neige.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/ninja.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/nuage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/oeuf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/orage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/orchestre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/ordinateur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/oreille.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/orgue.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/ours.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pamplemousse.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pantalon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/panthre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pantoufle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/papiertoilette.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/papillon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/parachutiste.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/parapluie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pcheur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/peigne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pelle.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/peluche.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pendule.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/perroquet.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/phoque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/photographe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/piano.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pieuvre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pilote.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pinards.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pingouin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pingpong.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pirate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/piscine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pistolet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/plage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/plombier.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/plume.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/poigne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/poire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/poisson.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/poivre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/policier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pomme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pompier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/popcorn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/port.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/portable.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/porte.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/porteavions.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/poubelle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/poulet.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/poussin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/prairie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/princesse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/prise.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/pyjama.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/quitation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/radiateur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/radio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/reine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/renard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/requin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/restaurant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rhinocros.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rideaux.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rivire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/robe.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rocher.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rollers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rose.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/roseau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/rteau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sablier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sabrelaser.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sacdos.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/salade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/salledebain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/salon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/samoura.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sandale.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sanglier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sauce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/saucisse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sautlaperche.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/savon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/saxophone.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/scorpion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/seau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/serpent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/serrurier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/serveuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/shampooing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sifflet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/singe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/snowboard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sombrero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sorcier.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/sousmarin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/soutiengorge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/statue.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/stylo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/superhros.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tabouret.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/talonaiguille.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tambour.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tandem.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tapis.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tarte.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tasse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/taureau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tempte.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tennis.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tenture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/th.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tigre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tirebouchon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tlphone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tlphrique.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tlvision.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/toiledemer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tomate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tonneau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tortue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/toureiffel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tournesol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/trace.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/tracteur.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/triangle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/troll.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/trompette.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/trononneuse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/trottoir.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vache.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/valise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vampire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/veau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vendeuse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/verre.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vigneron.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/violon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vitamine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vlo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/voiture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/volcan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/vranda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/yaourt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pic/zbre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Action/Control/ListAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/control/list.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/control/show.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/control/show.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/control/show.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/control/show.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/control/show.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/control/show.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Pendule.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Photographe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Pomme.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Prairie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Pêcheur.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Sabre laser.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Sous-marin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Tabouret.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/Taureau.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/accordéon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/aéroport.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/caleçon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/fenêtre.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pic/fée.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Fixtures/ThumbnailFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Fixtures/ThumbnailFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Model/Control.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Model/Control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Model/Interfaces/ControlInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Model/Interfaces/ControlInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Repository/Interfaces/ThumbnailRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Repository/Interfaces/ThumbnailRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Repository/ThumbnailRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Repository/ThumbnailRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/thumbnail/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/thumbnail/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/thumbnail/list.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/thumbnail/list.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/thumbnail/list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/thumbnail/list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Repository/ControlRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Repository/ControlRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
@@ -80,24 +444,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/Action/Control/ShowAction.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-              <folding>
-                <element signature="e#41#88#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Domain/Repository/Interfaces/ControlRepositoryInterface.php">
+        <entry file="file://$PROJECT_DIR$/src/UI/Action/Control/ListAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="160">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -111,6 +463,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/UI/Action/Control</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -122,9 +479,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Domain/DTO/Interfaces/OutputListDTOInterface.php" />
-        <option value="$PROJECT_DIR$/src/Domain/DTO/OutputListDTO.php" />
-        <option value="$PROJECT_DIR$/tests/Domain/Loader/ListLoaderTest.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/tests/Fixtures/ResponderConstructor.php" />
@@ -143,19 +497,14 @@
         <option value="$PROJECT_DIR$/src/Domain/Loader/Interfaces/ListLoaderInterface.php" />
         <option value="$PROJECT_DIR$/src/Application/Exception/LoadingException.php" />
         <option value="$PROJECT_DIR$/src/Application/Listener/LoadingExceptionListener.php" />
-        <option value="$PROJECT_DIR$/src/Domain/Loader/ListLoader.php" />
         <option value="$PROJECT_DIR$/src/Domain/Counter/ThumbnailCounter.php" />
-        <option value="$PROJECT_DIR$/assets/css/thumbnail/list.scss" />
         <option value="$PROJECT_DIR$/templates/thumbnails/list.html.twig" />
         <option value="$PROJECT_DIR$/src/UI/Action/Thumbnail/ListAction.php" />
         <option value="$PROJECT_DIR$/src/UI/Responder/ViewResponder.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/src/Application/Helper/Slugger.php" />
         <option value="$PROJECT_DIR$/src/UI/Action/Core/HomeAction.php" />
         <option value="$PROJECT_DIR$/src/Domain/Fixtures/ThumbnailFixture.php" />
         <option value="$PROJECT_DIR$/src/UI/Action/Test/ShowAction.php" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/Domain/Repository/Interfaces/ThumbnailRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/src/Domain/DTO/OutputItemDTO.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/Interfaces/ControlInterface.php" />
@@ -165,14 +514,22 @@
         <option value="$PROJECT_DIR$/src/Domain/Repository/ThumbnailRepository.php" />
         <option value="$PROJECT_DIR$/src/UI/Action/Control/ShowAction.php" />
         <option value="$PROJECT_DIR$/var/log/dev.log" />
-        <option value="$PROJECT_DIR$/src/Domain/Repository/ControlRepository.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/Control.php" />
         <option value="$PROJECT_DIR$/src/Domain/Loader/ItemLoader.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/assets/css/core/_nav.scss" />
         <option value="$PROJECT_DIR$/templates/control/show.html.twig" />
-        <option value="$PROJECT_DIR$/assets/css/control/show.scss" />
         <option value="$PROJECT_DIR$/src/Domain/Repository/Interfaces/ControlRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/assets/css/core/_nav.scss" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Domain/Repository/ControlRepository.php" />
+        <option value="$PROJECT_DIR$/src/Domain/Loader/ListLoader.php" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/assets/css/style.scss" />
+        <option value="$PROJECT_DIR$/assets/css/thumbnail/list.scss" />
+        <option value="$PROJECT_DIR$/assets/css/control/show.scss" />
+        <option value="$PROJECT_DIR$/templates/control/list.html.twig" />
+        <option value="$PROJECT_DIR$/assets/css/control/list.scss" />
+        <option value="$PROJECT_DIR$/src/UI/Action/Control/ListAction.php" />
       </list>
     </option>
   </component>
@@ -298,7 +655,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,36 +662,11 @@
               <item name="app-upe2a" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-upe2a" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="app-upe2a" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-upe2a" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-upe2a" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-upe2a" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-upe2a" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-upe2a" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="Action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-upe2a" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-upe2a" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="Action" type="462c0819:PsiDirectoryNode" />
-              <item name="Control" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +742,8 @@
       <workItem from="1544861000070" duration="1042000" />
       <workItem from="1544862057985" duration="2688000" />
       <workItem from="1544864760379" duration="24859000" />
-      <workItem from="1544889643330" duration="2342000" />
+      <workItem from="1544889643330" duration="5880000" />
+      <workItem from="1544909613298" duration="690000" />
     </task>
     <task id="LOCAL-00001" summary="Create the base template">
       <created>1544870392634</created>
@@ -434,7 +766,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544885459954</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create the control show page">
+      <created>1544891996010</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544891996010</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Design the navbar">
+      <created>1544893947037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544893947037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -470,7 +816,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30931000" />
+    <option name="totallyTimeSpent" value="35159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="65" width="1920" height="1053" extended-state="6" />
@@ -488,7 +834,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32894737" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.33223686" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32894737" />
@@ -532,24 +878,11 @@
     <MESSAGE value="Create the thumbnail list page" />
     <MESSAGE value="Create the thumbnail list page with filter" />
     <MESSAGE value="Create the control show page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create the control show page" />
+    <MESSAGE value="Design the navbar" />
+    <MESSAGE value="Create the test list page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create the test list page" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/test/doctrine.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Fixtures/ThumbnailContructor.php" />
     <entry file="file://$PROJECT_DIR$/tests/Fixtures/ThumbnailConstructor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -656,23 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Action/Thumbnail/ListAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding>
-            <element signature="e#43#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -715,28 +1031,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/Action/Test/ShowAction.php" />
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-          <folding>
-            <element signature="e#594#603#0#Twig" expanded="true" />
-            <element signature="e#657#669#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://65e0d742-6432-4e2a-afc4-3809cf708959/schema/upe2a/table/upe2a_control">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/thumbnail/list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="42" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -750,38 +1048,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Loader/Interfaces/ListLoaderInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Loader/ListLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#37#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/DTO/OutputItemDTO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/DTO/OutputItemDTO.php" />
     <entry file="file://$PROJECT_DIR$/src/Domain/DTO/Interfaces/OutputItemInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -793,16 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/Interfaces/RepositoryLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="e#52#102#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,30 +1090,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/ControlRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding>
-            <element signature="e#41#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/Model/Control.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/ThumbnailRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-          <folding>
-            <element signature="e#41#91#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,20 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/control/show.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/core/_nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/control/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -912,6 +1135,13 @@
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/Interfaces/ControlRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -925,10 +1155,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/Interfaces/ControlRepositoryInterface.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/core/_nav.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="-324">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Action/Thumbnail/ListAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding>
+            <element signature="e#43#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/ThumbnailRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1256">
+          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding>
+            <element signature="e#41#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Loader/Interfaces/ListLoaderInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/ControlRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="e#41#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Repository/Interfaces/RepositoryLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#52#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="e#770#782#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/thumbnail/list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/control/show.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/control/list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/control/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#529#541#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Loader/ListLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <element signature="e#37#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Action/Control/ListAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

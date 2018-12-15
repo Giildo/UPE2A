@@ -23,7 +23,9 @@ class ControlRepository extends ServiceEntityRepository implements ControlReposi
      */
     public function loadEntities(): ?array
     {
-        return [];
+        return $this->createQueryBuilder('c')
+                    ->getQuery()
+                    ->execute();
     }
 
     /**

@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/css/control/list.css') }}"/>
+{% endblock %}
+
+{% block body %}
+    <section>
+        <h1>Liste des tests</h1>
+
+        <table>
+            <thead>
+            <tr>
+                <td>Numéro du test</td>
+                <td>Date du test</td>
+                <td>Mots utilisés</td>
+            </tr>
+            </thead>
+            <tbody>
+            {% for control in controls.entities %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>
+                        <a href="{{ path('control_show', {'id': control.id}) }}">
+                            {{ control.date | date('d/m/Y') }}
+                        </a>
+                    </td>
+                    <td>
+                        <ul>
+                            {% for thumbnail in control.thumbnails %}
+                                <li>{{ thumbnail.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}

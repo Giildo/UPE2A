@@ -1,0 +1,11 @@
+section table {
+  border-collapse: collapse;
+  width: 600px;
+  margin: auto; }
+  section table tr td {
+    border: 1px solid black;
+    text-align: center; }
+    section table tr td ul {
+      text-align: left; }
+
+/*# sourceMappingURL=list.css.map */
