@@ -12,7 +12,7 @@ use Doctrine\ORM\PersistentCollection;
  * @package App\Domain\Model
  *
  * @ORM\Table(name="upe2a_control")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="App\Domain\Repository\ControlRepository")
  */
 class Control implements ControlInterface
 {
@@ -44,14 +44,14 @@ class Control implements ControlInterface
     /**
      * Control constructor.
      * @param DateTime $date
-     * @param PersistentCollection $pictures
+     * @param PersistentCollection $thumbnails
      */
     public function __construct(
         DateTime $date,
-        PersistentCollection $pictures
+        PersistentCollection $thumbnails
     ) {
         $this->date = $date;
-        $this->pictures = $pictures;
+        $this->thumbnails = $thumbnails;
     }
 
     /**
@@ -71,10 +71,10 @@ class Control implements ControlInterface
     }
 
     /**
-     * @return PersistentCollection
+     * @return array
      */
-    public function getPictures(): PersistentCollection
+    public function getThumbnails(): array
     {
-        return $this->pictures;
+        return $this->thumbnails->toArray();
     }
 }

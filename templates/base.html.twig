@@ -18,7 +18,8 @@
 <body>
 <nav id="navbar">
     <ul>
-        <li><a href="#">Tests</a></li>
+        <li><a href="{{ path('core_home') }}">Accueil</a></li>
+        <li><a href="{{ path('control_show', {'id': '1'}) }}">Tests</a></li>
         <li><a href="{{ path('thumbnails_list') }}">Vignettes</a></li>
     </ul>
 </nav>

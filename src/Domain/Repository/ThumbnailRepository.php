@@ -2,6 +2,7 @@
 
 namespace App\Domain\Repository;
 
+use App\Domain\DTO\Interfaces\OutputItemInterface;
 use App\Domain\Model\Thumbnail;
 use App\Domain\Repository\Interfaces\ThumbnailRepositoryInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
@@ -62,5 +63,19 @@ class ThumbnailRepository extends ServiceEntityRepository implements ThumbnailRe
                          ->useResultCache(true)
                          ->setResultCacheLifetime(60)
                          ->getSingleResult();
+    }
+
+    /**
+     * Loads the control according to their id.
+     *
+     * @param int $id
+     *
+     * @return OutputItemInterface|null
+     *
+     * @throws NonUniqueResultException
+     */
+    public function loadEntityById(int $id): ?OutputItemInterface
+    {
+        return null;
     }
 }

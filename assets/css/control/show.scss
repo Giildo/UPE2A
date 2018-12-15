@@ -1,0 +1,30 @@
+section {
+  h1 {
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: auto;
+    margin: auto;
+
+    tr {
+      td {
+        border: 1px solid black;
+
+        img {
+          width: 150px;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+
+    .row-def {
+      td {
+        height: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

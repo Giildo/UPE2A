@@ -19,6 +19,7 @@ Encore
      */
     .addEntry('css/style', './assets/css/style.scss')
     .addEntry('css/thumbnail/list', './assets/css/thumbnail/list.scss')
+    .addEntry('css/control/show', './assets/css/control/show.scss')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

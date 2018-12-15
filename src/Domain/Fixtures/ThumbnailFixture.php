@@ -2,12 +2,26 @@
 
 namespace App\Domain\Fixtures;
 
+use App\Application\Helper\Slugger;
 use App\Domain\Model\Thumbnail;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 
 class ThumbnailFixture extends Fixture
 {
+    /**
+     * @var Slugger
+     */
+    private $slugger;
+
+    /**
+     * ThumbnailFixture constructor.
+     * @param Slugger $slugger
+     */
+    public function __construct(Slugger $slugger)
+    {
+        $this->slugger = $slugger;
+    }
 
     /**
      * Load data fixtures with the passed EntityManager
@@ -16,41 +30,31 @@ class ThumbnailFixture extends Fixture
      */
     public function load(ObjectManager $manager)
     {
-        $abeille = new Thumbnail(
-            'abeille',
-            'gif'
-        );
-        $manager->persist($abeille);
+        $files = scandir(__DIR__ . '/../../../public/pic');
+        unset($files[1], $files[0]);
 
-        $calecon = new Thumbnail(
-            'caleçon',
-            'jpg'
-        );
-        $manager->persist($calecon);
+        foreach ($files as $file) {
+            $params = explode(
+                '.',
+                $file
+            );
 
-        $chanteuse = new Thumbnail(
-            'chanteuse',
-            'jpg'
-        );
-        $manager->persist($chanteuse);
+            $name = $params[0];
+            $nameSlugged = $this->slugger->slugify($name);
+            $ext = $params[1];
+            $extSlugged = $ext;
 
-        $fee = new Thumbnail(
-            'fée',
-            'jpg'
-        );
-        $manager->persist($fee);
+            $tbn = new Thumbnail(
+                $nameSlugged,
+                $extSlugged
+            );
+            $manager->persist($tbn);
 
-        $fenetre = new Thumbnail(
-            'fenêtre',
-            'jpg'
-        );
-        $manager->persist($fenetre);
-
-        $furet = new Thumbnail(
-            'furet',
-            'jpg'
-        );
-        $manager->persist($furet);
+            rename(
+                __DIR__ . '/../../../public/pic/' . $name . '.' . $extSlugged,
+                __DIR__ . '/../../../public/pic/' . $nameSlugged . '.' . $extSlugged
+            );
+        }
 
         $manager->flush();
     }

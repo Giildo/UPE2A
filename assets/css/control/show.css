@@ -1,0 +1,17 @@
+section h1 {
+  text-align: center; }
+section table {
+  border-collapse: collapse;
+  width: auto;
+  margin: auto; }
+  section table tr td {
+    border: 1px solid black; }
+    section table tr td img {
+      width: 150px;
+      height: auto;
+      display: block; }
+  section table .row-def td {
+    height: 20px;
+    text-align: center; }
+
+/*# sourceMappingURL=show.css.map */

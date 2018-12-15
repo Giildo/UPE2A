@@ -2,10 +2,10 @@
 
 namespace App\Domain\Model\Interfaces;
 
+use App\Domain\DTO\Interfaces\OutputItemInterface;
 use DateTime;
-use Doctrine\ORM\PersistentCollection;
 
-interface ControlInterface extends ModelInterface
+interface ControlInterface extends ModelInterface, OutputItemInterface
 {
     /**
      * @return int
@@ -18,7 +18,7 @@ interface ControlInterface extends ModelInterface
     public function getDate(): DateTime;
 
     /**
-     * @return PersistentCollection
+     * @return array
      */
-    public function getPictures(): PersistentCollection;
+    public function getThumbnails(): array;
 }

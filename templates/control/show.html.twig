@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/css/control/show.css') }}"/>
+{% endblock %}
+
+{% block body %}
+    <section>
+        <h1>Contrôle du {{ control.date | date('d/m/Y') }}</h1>
+
+        <table>
+            <tr class="row-pic">
+                {% for thumbnail in control.thumbnails %}
+                    <td>
+                        <img src="{{ asset('pic/'~thumbnail.name~'.'~thumbnail.extension) }}"
+                             alt="{{ thumbnail.name }}"/>
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr class="row-def">
+                {% for thumbnail in control.thumbnails %}
+                    <td>{{ thumbnail.name }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
