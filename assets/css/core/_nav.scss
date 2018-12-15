@@ -1,0 +1,42 @@
+@import "../style/color";
+@import "../style/font";
+
+nav {
+  position: fixed;
+  border-top: 10px solid $greyDark;
+  border-bottom: 1px solid white;
+  background-color: $grey;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    height: 49px;
+
+    li {
+      list-style: none;
+      flex-basis: 150px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $greyDark;
+      }
+
+      a {
+        color: white;
+        font-family: $titleFont;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
