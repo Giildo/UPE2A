@@ -17,11 +17,21 @@
 </head>
 <body>
 <nav id="navbar">
-    <ul>
-        <li><a href="{{ path('core_home') }}">Accueil</a></li>
-        <li><a href="{{ path('control_show', {'id': '1'}) }}">Tests</a></li>
-        <li><a href="{{ path('thumbnails_list') }}">Vignettes</a></li>
-    </ul>
+    <div id="brand"><a href="{{ path('core_home') }}">Accueil</a></div>
+    <div class="dropdown">
+        <button class="dropbtn">Tests</button>
+        <div class="dropdown-content">
+            <a href="{{ path('control_show', {'id': 1}) }}">Liste des tests</a>
+            <a href="{{ path('control_show', {'id': 1}) }}">Liste des tests</a>
+            <a href="{{ path('control_show', {'id': 1}) }}">Liste des tests</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Vignettes</button>
+        <div class="dropdown-content">
+            <a href="{{ path('thumbnails_list') }}">Liste des vignettes</a>
+        </div>
+    </div>
 </nav>
 {% block body %}{% endblock %}
 {% block javascripts %}{% endblock %}

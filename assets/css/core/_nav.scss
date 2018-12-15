@@ -10,32 +10,85 @@
   width: 100%;
   box-sizing: border-box;
   top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
 
-  ul {
+  a {
+    color: white;
+    font-family: $titleFont;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  #brand {
+    flex-basis: 150px;
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 49px;
 
-    li {
-      list-style: none;
-      flex-basis: 150px;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &:hover {
+      background-color: $greyDark;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    list-style: none;
+    flex-basis: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dropbtn {
+      background-color: $grey;
+      color: white;
+      width: 100%;
+      font-size: 1.5em;
+      border: none;
+      cursor: pointer;
 
       &:hover {
         background-color: $greyDark;
       }
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 49px;
+      background: $grey;
+      min-width: 200px;
+      -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
       a {
-        color: white;
-        font-family: $titleFont;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.5em;
+        padding: 10px 0;
+        font-size: 1.1em;
+        display: block;
+        text-align: center;
+
+        &:hover {
+          background-color: $greyDark;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $greyDark;
+
+      .dropdown-content {
+        display: block;
+      }
+
+      .dropbtn {
+        background-color: $greyDark;
       }
     }
   }
