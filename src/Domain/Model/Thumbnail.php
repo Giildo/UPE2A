@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @package App\Domain\Model
  *
  * @ORM\Table(name="upe2a_thumbnail")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="App\Domain\Repository\ThumbnailRepository")
  */
 class Thumbnail implements ThumbnailInterface
 {

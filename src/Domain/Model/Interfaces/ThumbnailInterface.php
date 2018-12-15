@@ -2,7 +2,7 @@
 
 namespace App\Domain\Model\Interfaces;
 
-interface ThumbnailInterface
+interface ThumbnailInterface extends ModelInterface
 {
     /**
      * @return int

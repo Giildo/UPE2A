@@ -1,0 +1,58 @@
+@import "../style/font";
+@import "../style/color";
+
+h1 {
+  text-align: center;
+  font-family: $titleFont;
+  font-size: 4em;
+}
+
+table {
+  width: 500px;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+
+  td {
+    border-left: 1px solid $greyDark;
+    border-right: 1px solid $greyDark;
+    width: 150px;
+  }
+
+  td:first-child {
+    width: 200px;
+    border-left: none;
+  }
+
+  td:last-child {
+    border-right: none;
+  }
+
+  thead {
+    tr {
+      border-bottom: 1px solid $greyDark;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $greyDark;
+
+      td:first-child {
+        img {
+          width: 200px;
+          height: auto;
+          display: block;
+        }
+      }
+
+      td:last-child {
+        a {
+          margin: 15px;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}

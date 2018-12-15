@@ -2,18 +2,10 @@
 
 namespace App\Domain\Model\Interfaces;
 
-
 use DateTime;
 use Doctrine\ORM\PersistentCollection;
 
-/**
- * Class Control
- * @package App\Domain\Model
- *
- * @ORM\Table(name="upe2a_control")
- * @ORM\Entity()
- */
-interface ControlInterface
+interface ControlInterface extends ModelInterface
 {
     /**
      * @return int
