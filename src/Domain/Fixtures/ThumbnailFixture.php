@@ -2,7 +2,7 @@
 
 namespace App\Domain\Fixtures;
 
-use App\Application\Helper\Slugger;
+use App\Application\Helper\Interfaces\SluggerInterface;
 use App\Domain\Model\Thumbnail;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -10,15 +10,15 @@ use Doctrine\Common\Persistence\ObjectManager;
 class ThumbnailFixture extends Fixture
 {
     /**
-     * @var Slugger
+     * @var SluggerInterface
      */
     private $slugger;
 
     /**
      * ThumbnailFixture constructor.
-     * @param Slugger $slugger
+     * @param SluggerInterface $slugger
      */
-    public function __construct(Slugger $slugger)
+    public function __construct(SluggerInterface $slugger)
     {
         $this->slugger = $slugger;
     }
@@ -45,13 +45,14 @@ class ThumbnailFixture extends Fixture
             $extSlugged = $ext;
 
             $tbn = new Thumbnail(
+                $name,
                 $nameSlugged,
                 $extSlugged
             );
             $manager->persist($tbn);
 
             rename(
-                __DIR__ . '/../../../public/pic/' . $name . '.' . $extSlugged,
+                __DIR__ . '/../../../public/pic/' . $name . '.' . $ext,
                 __DIR__ . '/../../../public/pic/' . $nameSlugged . '.' . $extSlugged
             );
         }

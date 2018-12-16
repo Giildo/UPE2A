@@ -40,7 +40,9 @@
       width: 100%;
       font-size: 1.5em;
       border: none;
-      cursor: pointer; }
+      cursor: pointer;
+      font-family: "Jura", sans-serif;
+      font-weight: bold; }
       #navbar .dropdown .dropbtn:hover {
         background-color: #707070; }
     #navbar .dropdown .dropdown-content {

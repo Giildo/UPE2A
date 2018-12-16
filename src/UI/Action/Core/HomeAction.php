@@ -37,6 +37,7 @@ class HomeAction
      */
     public function home(): Response
     {
+        var_dump(strtolower('Ç'));
         return $this->viewResponder->response(
             [
                 'templatePath' => 'core/home.html.twig',

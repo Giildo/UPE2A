@@ -21,4 +21,9 @@ interface ControlInterface extends ModelInterface, OutputItemInterface
      * @return array
      */
     public function getThumbnails(): array;
+
+    /**
+     * @param ThumbnailInterface $thumbnail
+     */
+    public function addThumbnail(ThumbnailInterface $thumbnail): void;
 }

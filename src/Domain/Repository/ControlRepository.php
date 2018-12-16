@@ -3,10 +3,13 @@
 namespace App\Domain\Repository;
 
 use App\Domain\Model\Control;
+use App\Domain\Model\Interfaces\ControlInterface;
 use App\Domain\Repository\Interfaces\ControlRepositoryInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 use App\Domain\DTO\Interfaces\OutputItemInterface;
+use Doctrine\ORM\OptimisticLockException;
+use Doctrine\ORM\ORMException;
 
 class ControlRepository extends ServiceEntityRepository implements ControlRepositoryInterface
 {
@@ -49,5 +52,16 @@ class ControlRepository extends ServiceEntityRepository implements ControlReposi
                     )
                     ->getQuery()
                     ->getOneOrNullResult();
+    }
+
+    /**
+     * @param ControlInterface $control
+     * @throws ORMException
+     * @throws OptimisticLockException
+     */
+    public function save(ControlInterface $control): void
+    {
+        $this->_em->persist($control);
+        $this->_em->flush();
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Domain\Model;
 
 use App\Domain\Model\Interfaces\ControlInterface;
+use App\Domain\Model\Interfaces\ThumbnailInterface;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\PersistentCollection;
@@ -47,11 +48,9 @@ class Control implements ControlInterface
      * @param PersistentCollection $thumbnails
      */
     public function __construct(
-        DateTime $date,
-        PersistentCollection $thumbnails
+        DateTime $date
     ) {
         $this->date = $date;
-        $this->thumbnails = $thumbnails;
     }
 
     /**
@@ -76,5 +75,13 @@ class Control implements ControlInterface
     public function getThumbnails(): array
     {
         return $this->thumbnails->toArray();
+    }
+
+    /**
+     * @param ThumbnailInterface $thumbnail
+     */
+    public function addThumbnail(ThumbnailInterface $thumbnail): void
+    {
+        $this->thumbnails->add($thumbnail);
     }
 }

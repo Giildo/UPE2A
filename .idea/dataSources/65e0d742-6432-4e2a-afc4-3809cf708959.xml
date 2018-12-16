@@ -1002,110 +1002,152 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="255" parent="20" name="upe2a_control">
+    <table id="255" parent="20" name="upe2a_category">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="256" parent="20" name="upe2a_control_thumbnail">
+    <table id="256" parent="20" name="upe2a_control">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="257" parent="20" name="upe2a_migration_version">
+    <table id="257" parent="20" name="upe2a_control_thumbnail">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="258" parent="20" name="upe2a_migration_version">
       <Collation>utf8_unicode_ci</Collation>
     </table>
-    <table id="258" parent="20" name="upe2a_thumbnail">
+    <table id="259" parent="20" name="upe2a_thumbnail">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <column id="259" parent="255" name="id">
+    <column id="260" parent="255" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="255" name="date">
+    <column id="261" parent="255" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="262" parent="255" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="263" parent="256" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="256" name="date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="261" parent="255" name="PRIMARY">
+    <key id="265" parent="256" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="262" parent="256" name="control_id">
+    <column id="266" parent="257" name="control_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="256" name="thumbnail_id">
+    <column id="267" parent="257" name="thumbnail_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="264" parent="256" name="IDX_788EA14332BEC70E">
+    <index id="268" parent="257" name="IDX_788EA14332BEC70E">
       <ColNames>control_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="265" parent="256" name="IDX_788EA143FDFF2E92">
+    <index id="269" parent="257" name="IDX_788EA143FDFF2E92">
       <ColNames>thumbnail_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="266" parent="256" name="PRIMARY">
+    <key id="270" parent="257" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>control_id
 thumbnail_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="267" parent="256" name="FK_788EA14332BEC70E">
+    <foreign-key id="271" parent="257" name="FK_788EA14332BEC70E">
       <ColNames>control_id</ColNames>
       <RefSchemaName>upe2a</RefSchemaName>
       <RefTableName>upe2a_control</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="268" parent="256" name="FK_788EA143FDFF2E92">
+    <foreign-key id="272" parent="257" name="FK_788EA143FDFF2E92">
       <ColNames>thumbnail_id</ColNames>
       <RefSchemaName>upe2a</RefSchemaName>
       <RefTableName>upe2a_thumbnail</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="269" parent="257" name="version">
+    <column id="273" parent="258" name="version">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="270" parent="257" name="PRIMARY">
+    <key id="274" parent="258" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="271" parent="258" name="id">
+    <column id="275" parent="259" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="258" name="name">
+    <column id="276" parent="259" name="name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="258" name="extension">
+    <column id="277" parent="259" name="extension">
       <Position>3</Position>
       <DataType>varchar(4)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="274" parent="258" name="PRIMARY">
+    <column id="278" parent="259" name="slug">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="279" parent="259" name="category_id">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="280" parent="259" name="IDX_1FB2B32612469DE2">
+      <ColNames>category_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="281" parent="259" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+    <foreign-key id="282" parent="259" name="FK_1FB2B32612469DE2">
+      <ColNames>category_id</ColNames>
+      <RefSchemaName>upe2a</RefSchemaName>
+      <RefTableName>upe2a_category</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

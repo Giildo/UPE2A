@@ -17,5 +17,20 @@ interface ThumbnailInterface extends ModelInterface
     /**
      * @return string
      */
+    public function getSlug(): string;
+
+    /**
+     * @return string
+     */
     public function getExtension(): string;
+
+    /**
+     * @return CategoryInterface|null
+     */
+    public function getCategory(): ?CategoryInterface;
+
+    /**
+     * @param CategoryInterface $category
+     */
+    public function addCategory(CategoryInterface $category): void;
 }

@@ -2,7 +2,9 @@
 
 namespace App\Application\Helper;
 
-class Slugger
+use App\Application\Helper\Interfaces\SluggerInterface;
+
+class Slugger implements SluggerInterface
 {
     /**
      * Slugs the word.
@@ -13,12 +15,47 @@ class Slugger
      */
     public function slugify(string $text): string
     {
+        $text = str_replace(
+            ['É', 'È', 'Ê', 'Ë', 'é', 'è', 'ê', 'ë',],
+            'e',
+            $text
+        );
+        $text = str_replace(
+            ['À', 'Â', 'à', 'â',],
+            'a',
+            $text
+        );
+        $text = str_replace(
+            ['Ô', 'ô',],
+            'o',
+            $text
+        );
+        $text = str_replace(
+            ['Ù', 'Û', 'Ü', 'ù', 'û', 'ü',],
+            'u',
+            $text
+        );
+        $text = str_replace(
+            ['Ç','ç',],
+            'c',
+            $text
+        );
+        $text = str_replace(
+            ['Æ','æ',],
+            'ae',
+            $text
+        );
+        $text = str_replace(
+            ['Œ','œ',],
+            'oe',
+            $text
+        );
+
         $text = strtolower($text);
-        $text = $this->removeAccents($text);
-        $text = $this->removeSpecialCharacters($text);
+
         $text = preg_replace(
             '/[[:punct:]]+/',
-            '',
+            '_',
             $text
         );
         $text = preg_replace(
@@ -26,51 +63,7 @@ class Slugger
             '_',
             $text
         );
+
         return trim(strip_tags($text));
-    }
-
-    private function removeAccents(string $text): string
-    {
-        $text = str_replace(
-            ['é', 'è', 'ê', 'ë'],
-            'e',
-            $text
-        );
-        $text = str_replace(
-            ['à', 'â'],
-            'a',
-            $text
-        );
-        $text = str_replace(
-            'ô',
-            'o',
-            $text
-        );
-        $text = str_replace(
-            ['ù', 'û', 'ü'],
-            'u',
-            $text
-        );
-        return $text;
-    }
-
-    private function removeSpecialCharacters(string $text): string
-    {
-        $text = str_replace(
-            'ç',
-            'c',
-            $text
-        );
-        $text = str_replace(
-            'æ',
-            'ae',
-            $text
-        );
-        $text = str_replace(
-            'œ',
-            'oe',
-            $text
-        );
-        return $text;
     }
 }

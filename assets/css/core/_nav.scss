@@ -52,6 +52,8 @@
       font-size: 1.5em;
       border: none;
       cursor: pointer;
+      font-family: $titleFont;
+      font-weight: bold;
 
       &:hover {
         background-color: $greyDark;

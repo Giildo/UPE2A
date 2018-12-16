@@ -40,7 +40,7 @@
             {% for thumbnail in thumbnails.entities %}
                 <tr>
                     <td>
-                        <img src="{{ asset('pic/' ~ thumbnail.name ~ '.' ~ thumbnail.extension) }}"
+                        <img src="{{ asset('pic/' ~ thumbnail.slug ~ '.' ~ thumbnail.extension) }}"
                              alt="{{ thumbnail.name }}">
                     </td>
                     <td>{{ thumbnail.name }}</td>
